@@ -1,0 +1,89 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    min-height: 100vh;
+    background-color: #526d96;
+
+}
+
+
+.wrapper {
+    display: inline-flex;
+}
+
+
+.wrapper .static_txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+
+.wrapper .dynamic_txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+
+.dynamic_txts li {
+    color: #FC6D;
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+
+
+.dynamic_txts li span {
+    position: relative;
+}
+
+
+.dynamic_txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #526d96;
+    border-left: 2px solid #FC6D;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}

@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+
+
+
+main {
+    width: 70vmin;
+    height: 75vmin;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #020239de;
+
+}
+
+
+.details {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.play {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+    background-color: #020239de;
+}
+
+.play .food {
+    background-color: #ff003d;
+}
+
+
+.play .head {
+    background-color: #00ff7b;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.controls i {
+    padding: 25px 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #1717;
+}
